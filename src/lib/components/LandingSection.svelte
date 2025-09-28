@@ -21,7 +21,7 @@
 		{#if title || description}
 			<div class="text-center mb-16">
 				{#if title}
-					<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+					<h2 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
 						{title}
 					</h2>
 				{/if}
