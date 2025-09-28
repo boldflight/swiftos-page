@@ -110,7 +110,7 @@
 
 <style>
 	#icons {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100vw;
