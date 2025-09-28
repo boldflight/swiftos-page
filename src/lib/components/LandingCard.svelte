@@ -16,9 +16,9 @@
 <div 
 	class={cn(
 		"group relative p-6 rounded-lg border transition-all duration-300",
-		"bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700",
-		"hover:shadow-lg hover:shadow-orange-500/25 hover:border-orange-500/50",
-		className.includes('line-numbered-code') ? 'bg-white dark:bg-white border-gray-200' : '',
+		"bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800",
+		"hover:shadow-lg hover:shadow-orange-500/25 hover:border-orange-500/50 dark:hover:border-orange-500/50",
+		className.includes('line-numbered-code') ? 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800' : '',
 		className
 	)}
 	on:mouseenter={() => isHovered = true}

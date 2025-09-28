@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import { theme } from '$lib/stores/theme';
 
 	const links = [{
 		label: 'Resources',
@@ -62,13 +63,18 @@
 					Copyright © {currentYear}. All rights reserved.
 				</p>
 				
-				<!-- Color mode toggle placeholder - would need to implement theme switching -->
+				<!-- Color mode toggle -->
 				<button
 					type="button"
 					class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
 					aria-label="Toggle color mode"
+					onclick={theme.toggle}
 				>
-					<Icon icon="heroicons:moon-20-solid" class="w-4 h-4" />
+					{#if $theme.resolvedTheme === 'dark'}
+						<Icon icon="heroicons:sun-20-solid" class="w-4 h-4" />
+					{:else}
+						<Icon icon="heroicons:moon-20-solid" class="w-4 h-4" />
+					{/if}
 				</button>
 			</div>
 		</div>

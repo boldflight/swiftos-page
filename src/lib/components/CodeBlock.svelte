@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { bundledLanguages, getSingletonHighlighter } from 'shiki';
+	import { theme as themeStore } from '$lib/stores/theme';
 
 	export let code: string;
 	export let language: string = 'swift';
@@ -8,23 +9,35 @@
 
 	let highlightedHtml = '';
 	let mounted = false;
+	let highlighter: any = null;
 
-	onMount(async () => {
+	// Function to update highlighted code based on current theme
+	async function updateHighlighting() {
+		if (!highlighter || !mounted) return;
+		
 		try {
-			const highlighter = await getSingletonHighlighter({
-				themes: [theme, 'github-light'],
-				langs: Object.keys(bundledLanguages)
-			});
-
-			// Use dark theme in dark mode, light theme in light mode
-			const isDark = document.documentElement.classList.contains('dark');
+			// Get current resolved theme from store
+			const isDark = $themeStore.resolvedTheme === 'dark';
 			const selectedTheme = isDark ? theme : 'github-light';
 
 			highlightedHtml = highlighter.codeToHtml(code, {
 				lang: language,
 				theme: selectedTheme
 			});
+		} catch (error) {
+			console.error('Shiki highlighting update failed:', error);
+		}
+	}
+
+	onMount(async () => {
+		try {
+			highlighter = await getSingletonHighlighter({
+				themes: [theme, 'github-light'],
+				langs: Object.keys(bundledLanguages)
+			});
+
 			mounted = true;
+			updateHighlighting();
 		} catch (error) {
 			console.error('Shiki highlighting failed:', error);
 			// Fallback to plain text with basic styling
@@ -32,6 +45,11 @@
 			mounted = true;
 		}
 	});
+
+	// React to theme changes
+	$: if (mounted && $themeStore.resolvedTheme) {
+		updateHighlighting();
+	}
 </script>
 
 {#if mounted}

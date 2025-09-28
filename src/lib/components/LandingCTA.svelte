@@ -8,7 +8,7 @@
 	} = $props();
 </script>
 
-<div class="bg-orange-50 dark:bg-orange-900/20 rounded-2xl p-8 lg:p-12 text-center">
+<div class="bg-orange-50 dark:bg-gray-900 rounded-2xl p-8 lg:p-12 text-center">
 	{#if title}
 		<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">
 			{title}
