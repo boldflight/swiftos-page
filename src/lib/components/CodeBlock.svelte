@@ -1,24 +1,26 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import { bundledLanguages, getSingletonHighlighter } from 'shiki';
-	import { theme as themeStore } from '$lib/stores/theme';
+	import { theme } from '$lib/stores/theme';
 
 	export let code: string;
 	export let language: string = 'swift';
-	export let theme: string = 'one-dark-pro';
+	export let codeTheme: string = 'one-dark-pro';
 
 	let highlightedHtml = '';
 	let mounted = false;
 	let highlighter: any = null;
+	let resolvedTheme = 'light';
+	let unsubscribe: (() => void) | null = null;
 
 	// Function to update highlighted code based on current theme
 	async function updateHighlighting() {
 		if (!highlighter || !mounted) return;
-		
+
 		try {
 			// Get current resolved theme from store
-			const isDark = $themeStore.resolvedTheme === 'dark';
-			const selectedTheme = isDark ? theme : 'github-light';
+			const isDark = resolvedTheme === 'dark';
+			const selectedTheme = isDark ? codeTheme : 'github-light';
 
 			highlightedHtml = highlighter.codeToHtml(code, {
 				lang: language,
@@ -31,25 +33,38 @@
 
 	onMount(async () => {
 		try {
+			console.log('Loading Shiki highlighter...');
 			highlighter = await getSingletonHighlighter({
-				themes: [theme, 'github-light'],
+				themes: [codeTheme, 'github-light'],
 				langs: Object.keys(bundledLanguages)
+			});
+			console.log('Shiki highlighter loaded successfully');
+
+			// Subscribe to resolved theme changes
+			unsubscribe = theme.resolvedTheme.subscribe((value) => {
+				resolvedTheme = value;
+				console.log('Theme changed, updating highlighting. currentTheme:', resolvedTheme);
+				if (mounted) {
+					updateHighlighting();
+				}
 			});
 
 			mounted = true;
 			updateHighlighting();
 		} catch (error) {
 			console.error('Shiki highlighting failed:', error);
+			console.log('Using fallback highlighting');
 			// Fallback to plain text with basic styling
 			highlightedHtml = `<pre><code>${code}</code></pre>`;
 			mounted = true;
 		}
 	});
 
-	// React to theme changes
-	$: if (mounted && $themeStore.resolvedTheme) {
-		updateHighlighting();
-	}
+	onDestroy(() => {
+		if (unsubscribe) {
+			unsubscribe();
+		}
+	});
 </script>
 
 {#if mounted}

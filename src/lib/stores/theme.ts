@@ -1,11 +1,20 @@
-import { writable } from 'svelte/store';
+import { writable, type Writable, type Readable } from 'svelte/store';
 import { browser } from '$app/environment';
 
 type Theme = 'light' | 'dark' | 'system';
 type ResolvedTheme = 'light' | 'dark';
 
+interface ThemeStore {
+	subscribe: Writable<Theme>['subscribe'];
+	resolvedTheme: Readable<ResolvedTheme>;
+	init: () => (() => void) | undefined;
+	setTheme: (newTheme: Theme) => void;
+	toggle: () => void;
+	getSystemTheme: () => ResolvedTheme;
+}
+
 // Create the theme store
-function createThemeStore() {
+function createThemeStore(): ThemeStore {
 	const { subscribe, set, update } = writable<Theme>('system');
 
 	// Resolved theme store (what's actually applied)
@@ -48,6 +57,9 @@ function createThemeStore() {
 		
 		const resolved = resolveTheme(stored);
 		applyTheme(resolved);
+		
+		// Make sure resolvedTheme is set initially
+		resolvedTheme.set(resolved);
 
 		// Listen for system theme changes
 		const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -57,6 +69,7 @@ function createThemeStore() {
 				if (currentTheme === 'system') {
 					const newResolved = getSystemTheme();
 					applyTheme(newResolved);
+					resolvedTheme.set(newResolved);
 				}
 				return currentTheme;
 			});
@@ -79,6 +92,7 @@ function createThemeStore() {
 		
 		const resolved = resolveTheme(newTheme);
 		applyTheme(resolved);
+		resolvedTheme.set(resolved);
 	}
 
 	// Toggle between light and dark (preserves user preference)

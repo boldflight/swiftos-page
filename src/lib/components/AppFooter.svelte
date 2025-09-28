@@ -2,6 +2,13 @@
 	import Icon from '@iconify/svelte';
 	import { theme } from '$lib/stores/theme';
 
+	let resolvedTheme: 'light' | 'dark' = 'light';
+
+	// Subscribe to resolved theme changes
+	$: unsubscribe = theme.resolvedTheme.subscribe((value) => {
+		resolvedTheme = value;
+	});
+
 	const links = [{
 		label: 'Resources',
 		children: [{
@@ -70,7 +77,7 @@
 					aria-label="Toggle color mode"
 					onclick={theme.toggle}
 				>
-					{#if $theme.resolvedTheme === 'dark'}
+					{#if resolvedTheme === 'dark'}
 						<Icon icon="heroicons:sun-20-solid" class="w-4 h-4" />
 					{:else}
 						<Icon icon="heroicons:moon-20-solid" class="w-4 h-4" />
