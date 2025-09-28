@@ -22,3 +22,52 @@ logs
 .env
 .env.*
 !.env.example
+
+# other svelte
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+
+# svelte
+.DS_Store
+node_modules
+dist
+test-results/
+package-lock.json
+yarn.lock
+vite.config.js.timestamp-*
+/packages/package/test/**/package
+/documentation/types.js
+.env
+.vercel_build_output
+.svelte-kit
+.cloudflare
+.pnpm-debug.log
+.netlify
+.turbo
+.vercel
+.test-tmp
+symlink-from
+.idea/
+_tmp_flaky_test_output.txt
