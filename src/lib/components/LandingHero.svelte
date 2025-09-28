@@ -20,7 +20,7 @@
 	{/if}
 
 	{#if title}
-		<h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl mb-6">
+		<h1 class="logo-container text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl mb-6">
 			{@html title}
 		</h1>
 	{/if}
@@ -37,9 +37,9 @@
 				<a
 					href={link.to}
 					target={link.target || '_self'}
-					class="inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-medium transition-colors
-						{link.color === 'gray' ? 'bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600' : 'bg-orange-500 text-white hover:bg-orange-600'}
-						{link.size === 'xl' ? 'px-8 py-4 text-lg' : ''}"
+					class="inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2
+						{link.color === 'gray' ? 'bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600' : 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500'}
+						{link.size === 'xl' ? 'px-6 py-3 text-base' : ''}"
 				>
 					{#if link.icon && !link.trailing}
 						<Icon icon={link.icon} class="w-5 h-5 mr-2" />

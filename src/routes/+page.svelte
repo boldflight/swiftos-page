@@ -29,6 +29,7 @@
 
 	<LandingSection class="!py-16 md:!py-24 lg:!py-32 min-h-screen flex items-center">
 		<LandingHero 
+			title='<span class="logo-overlay">Hummingbird</span>'
 			description={data.page?.hero?.description}
 			links={data.page?.hero?.links}
 		>
@@ -49,17 +50,11 @@
 				{/if}
 			{/snippet}
 
-			{#snippet children()}
-				<div class="logo-container text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-					<span class="logo-overlay">Hummingbird</span>
-				</div>
-			{/snippet}
-
 			{#snippet bottom()}
 				<div class="mt-16">
 					<LandingCard class="line-numbered-code">
 						{#if helloHtml}
-							<div class="prose dark:prose-invert max-w-none">
+							<div class="prose prose-slate max-w-none">
 								{@html helloHtml}
 							</div>
 						{/if}
@@ -125,7 +120,7 @@
 	}
 
 	@media (max-width: 500px) {
-		.logo-container {
+		:global(.logo-container) {
 			font-size: 32pt;
 		}
 
@@ -134,7 +129,7 @@
 		}
 	}
 
-	.logo-overlay::before {
+	:global(.logo-overlay::before) {
 		width: 2em;
 		height: 2em;
 		margin-left: -1.7em;
@@ -146,7 +141,7 @@
 		background-repeat: no-repeat;
 	}
 
-	.logo-overlay {
+	:global(.logo-overlay) {
 		margin-left: 1.5em;
 	}
 

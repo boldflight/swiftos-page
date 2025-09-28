@@ -10,7 +10,7 @@
 	} = $props();
 </script>
 
-<div class="card p-6 {className}">
+<div class="card p-6 {className} {className.includes('line-numbered-code') ? 'bg-white dark:bg-white border-gray-200' : ''}">
 	{#if icon}
 		<div class="mb-4">
 			<div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-orange-100 dark:bg-orange-900/20">
