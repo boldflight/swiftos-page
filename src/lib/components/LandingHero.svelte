@@ -20,7 +20,7 @@
 	{/if}
 
 	{#if title}
-		<h1 class="logo-container text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl mb-6">
+		<h1 class="logo-container text-5xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl mb-6">
 			{@html title}
 		</h1>
 	{/if}

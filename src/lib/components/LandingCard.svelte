@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import { cn } from '$lib/utils';
 
 	let { 
 		title = '',
@@ -8,9 +9,21 @@
 		class: className = '',
 		children = undefined
 	} = $props();
+
+	let isHovered = false;
 </script>
 
-<div class="card p-6 {className} {className.includes('line-numbered-code') ? 'bg-white dark:bg-white border-gray-200' : ''}">
+<div 
+	class={cn(
+		"group relative p-6 rounded-lg border transition-all duration-300",
+		"bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700",
+		"hover:shadow-lg hover:shadow-orange-500/25 hover:border-orange-500/50",
+		className.includes('line-numbered-code') ? 'bg-white dark:bg-white border-gray-200' : '',
+		className
+	)}
+	on:mouseenter={() => isHovered = true}
+	on:mouseleave={() => isHovered = false}
+>
 	{#if icon}
 		<div class="mb-4">
 			<div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-orange-100 dark:bg-orange-900/20">

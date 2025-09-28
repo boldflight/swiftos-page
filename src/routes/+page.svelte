@@ -4,15 +4,31 @@
 	import LandingHero from '$lib/components/LandingHero.svelte';
 	import LandingCard from '$lib/components/LandingCard.svelte';
 	import LandingCTA from '$lib/components/LandingCTA.svelte';
+	import CodeBlock from '$lib/components/CodeBlock.svelte';
 	import Icon from '@iconify/svelte';
-	import { marked } from 'marked';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 
-	// Process markdown content
-	const helloHtml = data.hello ? marked(data.hello) : '';
-	const basicRouteHtml = data.basicRoute ? marked(data.basicRoute) : '';
+	// Extract Swift code from markdown
+	const helloCode = `import Hummingbird
+
+let router = Router().get { req, context in
+    return "Hello, Swift!"
+}
+let app = Application(router: router)
+try await app.runService()`;
+
+	const basicRouteCode = `import Hummingbird
+import Meow // From MongoKitten
+
+router.get("/videos/:id") { req, context in
+  let id = try context.parameters.require(
+    "id",
+    as: Reference<Video>.self
+  )
+  return try await id.resolve(in: db)
+}`;
 </script>
 
 <svelte:head>
@@ -53,11 +69,7 @@
 			{#snippet bottom()}
 				<div class="mt-16">
 					<LandingCard class="line-numbered-code">
-						{#if helloHtml}
-							<div class="prose prose-slate max-w-none">
-								{@html helloHtml}
-							</div>
-						{/if}
+						<CodeBlock code={helloCode} language="swift" />
 					</LandingCard>
 				</div>
 			{/snippet}
@@ -89,11 +101,7 @@
 		>
 			{#snippet children()}
 				<LandingCard class="line-numbered-code">
-					{#if basicRouteHtml}
-						<div class="prose dark:prose-invert max-w-none">
-							{@html basicRouteHtml}
-						</div>
-					{/if}
+					<CodeBlock code={basicRouteCode} language="swift" />
 				</LandingCard>
 			{/snippet}
 		</LandingHero>
