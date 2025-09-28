@@ -22,12 +22,12 @@
 	<meta property="og:description" content={data.page?.description || 'The Web Framework for Swift'} />
 </svelte:head>
 
-<div class="display-flex relative">
+<div class="relative min-h-screen">
 	<div id="icons" class="absolute inset-0 -z-10">
 		<BackgroundIcons />
 	</div>
 
-	<LandingSection class="md:py-0 sm:py-0">
+	<LandingSection class="!py-16 md:!py-24 lg:!py-32 min-h-screen flex items-center">
 		<LandingHero 
 			description={data.page?.hero?.description}
 			links={data.page?.hero?.links}
@@ -70,7 +70,6 @@
 	</LandingSection>
 
 	<LandingSection 
-		class="md:py-0 sm:py-0"
 		title={data.page?.features?.title}
 		description={data.page?.features?.description}
 		headline={data.page?.features?.headline}
@@ -86,7 +85,7 @@
 		</div>
 	</LandingSection>
 
-	<LandingSection class="md:py-0 sm:py-0">
+	<LandingSection>
 		<LandingHero
 			title={data.page?.ecosystem?.title}
 			description={data.page?.ecosystem?.description}
@@ -116,10 +115,13 @@
 
 <style>
 	#icons {
-		position: static;
-		width: 100%;
-		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
 		z-index: -1;
+		pointer-events: none;
 	}
 
 	@media (max-width: 500px) {
@@ -127,7 +129,7 @@
 			font-size: 32pt;
 		}
 
-		.line-numbered-code {
+		:global(.line-numbered-code) {
 			font-size: 9.5pt;
 		}
 	}
@@ -148,7 +150,7 @@
 		margin-left: 1.5em;
 	}
 
-	.line-numbered-code {
+	:global(.line-numbered-code) {
 		max-width: calc(min(90vw, 40em, 100%));
 		overflow: none;
 		white-space: pre-wrap;

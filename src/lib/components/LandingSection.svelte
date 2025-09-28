@@ -9,7 +9,7 @@
 </script>
 
 <section class="landing-section {className}">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
 		{#if headline}
 			<div class="text-center mb-4">
 				<span class="inline-flex items-center rounded-full bg-orange-50 px-3 py-1 text-xs font-medium text-orange-700 ring-1 ring-orange-600/20 dark:bg-orange-400/10 dark:text-orange-400 dark:ring-orange-400/30">
