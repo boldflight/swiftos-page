@@ -1,29 +1,6 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
+# svelte
 
-# Node dependencies
-node_modules
-
-# Logs
-logs
-*.log
-
-# Misc
-.DS_Store
-.fleet
-.idea
-
-# Local env files
-.env
-.env.*
-!.env.example
-
-# other svelte
+# node
 node_modules
 
 # Output
@@ -33,6 +10,11 @@ node_modules
 .wrangler
 /.svelte-kit
 /build
+dist
+.vercel_build_output
+.cloudflare
+.turbo
+.test-tmp
 
 # OS
 .DS_Store
@@ -48,26 +30,21 @@ Thumbs.db
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-
-# svelte
-.DS_Store
-node_modules
-dist
+# Testing
 test-results/
+
+# Package managers
 package-lock.json
 yarn.lock
-vite.config.js.timestamp-*
+.pnpm-debug.log
+
+# IDE
+.idea/
+
+# Documentation
 /packages/package/test/**/package
 /documentation/types.js
-.env
-.vercel_build_output
-.svelte-kit
-.cloudflare
-.pnpm-debug.log
-.netlify
-.turbo
-.vercel
-.test-tmp
+
+# Temp files
 symlink-from
-.idea/
 _tmp_flaky_test_output.txt
