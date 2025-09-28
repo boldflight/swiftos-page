@@ -51,17 +51,21 @@
 		border-radius: 0.5rem;
 		overflow-x: auto;
 		line-height: 1.5;
+		text-align: left;
 	}
 
 	:global(.shiki-container code) {
 		font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
 		font-size: 0.875rem;
+		text-align: left;
+		display: block;
 	}
 
 	.fallback-code {
 		background: #f8f9fa;
 		border-radius: 0.5rem;
 		padding: 1rem;
+		text-align: left;
 	}
 
 	.fallback-code pre {
@@ -69,5 +73,6 @@
 		font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
 		font-size: 0.875rem;
 		line-height: 1.5;
+		text-align: left;
 	}
 </style>
