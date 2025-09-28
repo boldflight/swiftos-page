@@ -97,7 +97,7 @@ router.get("/videos/:id") { req, context in
 			title={data.page?.ecosystem?.title}
 			description={data.page?.ecosystem?.description}
 			links={data.page?.ecosystem?.links}
-			align="left"
+			align="center"
 		>
 			{#snippet children()}
 				<LandingCard class="line-numbered-code">
