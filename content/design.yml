@@ -1,0 +1,214 @@
+title: Swift OS - Design Principles
+description: Revolutionary design principles that transform the relationship between humans and computers.
+hero:
+  title: Design Principles
+  description: Explore the foundational concepts that make Swift OS a revolutionary computing experience.
+  headline:
+    label: The Future of Human-Computer Interaction
+    to: /examples
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
+
+paradigms:
+  title: Revolutionary Interface Paradigms
+  description: |
+    Swift OS fundamentally reimagines how humans interact with computers, moving beyond traditional metaphors to create truly intelligent, adaptive interfaces.
+  items:
+    - title: Intent-First Computing
+      description: |
+        Instead of learning complex interfaces, simply describe what you want to accomplish. The system understands your goals and automatically configures the perfect workspace.
+        
+        **Key Concepts:**
+        - Natural language as primary interface
+        - Goal decomposition and workflow automation
+        - Context-aware functionality surfacing
+        - Predictive workspace preparation
+      icon: heroicons:sparkles
+    - title: Center-Periphery Attention Model
+      description: |
+        Honor natural human attention patterns with a clear focal hierarchy. Your primary task occupies the center while supporting information arranges intelligently around the periphery.
+        
+        **Key Concepts:**
+        - Primary task gets optimal screen real estate
+        - Supporting widgets arranged by contextual relevance
+        - Dynamic hierarchy as focus shifts
+        - Minimal cognitive load design
+      icon: heroicons:eye
+    - title: Zero Window Management
+      description: |
+        Eliminate the cognitive overhead of manual window arrangement. The system learns your workflow patterns and automatically optimizes spatial layouts for maximum productivity.
+        
+        **Key Concepts:**
+        - Intelligent spatial arrangement
+        - Context-aware sizing and positioning
+        - Flow-based layouts following natural patterns
+        - Predictive interface positioning
+      icon: heroicons:squares-plus
+    - title: Post-Application Paradigm
+      description: |
+        Break free from isolated application silos. Functionality emerges contextually when needed, creating fluid workflows that adapt to your changing intentions.
+        
+        **Key Concepts:**
+        - Contextual functionality surfacing
+        - Semantic organization by intent
+        - Progressive disclosure of complexity
+        - Dynamic capability composition
+      icon: heroicons:cube-transparent
+
+composition:
+  title: Composable Architecture
+  description: |
+    Move beyond monolithic applications to create infinitely flexible, interconnected widget ecosystems that adapt to your unique workflow patterns.
+  items:
+    - title: Dynamic Widget Composition
+      description: |
+        Widgets automatically connect when their inputs and outputs are compatible, creating powerful workflow chains without manual configuration.
+        
+        **Benefits:**
+        - Seamless data flow between components
+        - Automatic workflow optimization
+        - Reduced setup friction
+        - Emergent functionality discovery
+      icon: heroicons:link
+    - title: Contextual State Sharing
+      description: |
+        Widgets maintain shared understanding of your current context, eliminating redundant data entry and creating cohesive experiences.
+        
+        **Benefits:**
+        - Unified context across all components
+        - Intelligent data prefilling
+        - Consistent user experience
+        - Reduced cognitive overhead
+      icon: heroicons:share
+    - title: Intelligent Adaptation
+      description: |
+        Components learn from your patterns and automatically adjust their behavior, layout, and prominence based on your workflow needs.
+        
+        **Benefits:**
+        - Personalized interface evolution
+        - Productivity pattern recognition
+        - Adaptive information density
+        - Predictive interface preparation
+      icon: heroicons:academic-cap
+
+conversation:
+  title: Conversational Computing
+  description: |
+    Transform computer interaction from command-driven to conversation-driven, making technology accessible through the most natural human interface: language.
+  items:
+    - title: Natural Language Interface
+      description: |
+        Interact with your computer like you would with an intelligent assistant. Voice, text, and gesture inputs work together seamlessly.
+        
+        **Capabilities:**
+        - Complex intent recognition
+        - Multi-step task decomposition
+        - Contextual command interpretation
+        - Learning personal vocabulary
+      icon: heroicons:microphone
+    - title: Intelligent Disambiguation
+      description: |
+        The system understands ambiguous requests through context, history, and clarifying questions, making interaction effortless and precise.
+        
+        **Features:**
+        - Context-aware interpretation
+        - Smart clarification prompts
+        - Historical pattern recognition
+        - Preference learning
+      icon: heroicons:question-mark-circle
+    - title: Multimodal Feedback
+      description: |
+        Voice input combines with visual confirmation and manipulation options, giving you the best of both conversational and graphical interfaces.
+        
+        **Integration:**
+        - Voice command visualization
+        - GUI refinement options
+        - Gesture completion
+        - Visual progress feedback
+      icon: heroicons:eye
+
+intelligence:
+  title: Ambient Intelligence
+  description: |
+    Create computing environments that understand not just your explicit commands, but your emotional state, energy levels, and contextual needs.
+  items:
+    - title: Emotional Context Awareness
+      description: |
+        The system adapts interface aesthetics, interaction patterns, and functionality based on your current emotional state and stress levels.
+        
+        **Adaptations:**
+        - Mood-responsive color schemes
+        - Stress-sensitive interruption filtering
+        - Energy-aware task suggestions
+        - Emotional support integration
+      icon: heroicons:heart
+    - title: Flow State Protection
+      description: |
+        Actively protect and enhance deep work by learning your optimal productivity patterns and minimizing cognitive disruptions.
+        
+        **Protection Methods:**
+        - Interruption management
+        - Context preservation
+        - Attention restoration
+        - Productivity pattern learning
+      icon: heroicons:shield-check
+    - title: Predictive Assistance
+      description: |
+        Anticipate your needs based on patterns, context, and goals, surfacing relevant tools and information before you ask for them.
+        
+        **Predictions:**
+        - Next likely actions
+        - Relevant information surfacing
+        - Tool preparation
+        - Context switching support
+      icon: heroicons:crystal-ball
+
+sovereignty:
+  title: Digital Sovereignty
+  description: |
+    Ensure users maintain complete control over their computing environment, data, and digital relationships while benefiting from intelligent assistance.
+  items:
+    - title: Privacy by Design
+      description: |
+        Every component built with privacy as a fundamental requirement, not an afterthought. Your data never leaves your control without explicit permission.
+        
+        **Protections:**
+        - Local-first processing
+        - Encrypted data storage
+        - Granular permission controls
+        - Transparent data usage
+      icon: heroicons:lock-closed
+    - title: Algorithmic Transparency
+      description: |
+        Understand how and why the system makes recommendations, with full visibility into decision-making processes and the ability to modify behavior.
+        
+        **Transparency Features:**
+        - Decision explanation
+        - Algorithmic auditing
+        - Bias detection
+        - User control overrides
+      icon: heroicons:magnifying-glass
+    - title: Open Architecture
+      description: |
+        Extensible design allows complete customization and modification of every aspect of the system, ensuring no vendor lock-in.
+        
+        **Openness:**
+        - Component replaceability
+        - API accessibility
+        - Plugin architecture
+        - Community development
+      icon: heroicons:code-bracket
+
+cta:
+  title: Experience the Future
+  description: |
+    These design principles come together to create a computing experience that feels more like collaborating with an intelligent partner than operating a machine.
+  links:
+    - label: Try Interactive Demo
+      to: /demo
+      leadingIcon: i-heroicons-play
+      size: xl
+    - label: Explore Examples
+      to: /examples
+      leadingIcon: i-heroicons-square-3-stack-3d
+      size: xl
+      color: gray

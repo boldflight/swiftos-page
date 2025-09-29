@@ -1,70 +1,120 @@
 title: Swift OS Examples
 description: Explore example projects showcasing composable widgets, AI agents, and system components built for Swift OS.
 categories:
+  - title: Revolutionary Interface Paradigms
+    description: |
+      Experience the future of human-computer interaction through intent-based interfaces and intelligent workspace orchestration.
+    projects:
+      - title: Center-Periphery Layout
+        description: Demonstrates how primary tasks stay center-focused while supporting widgets arrange intelligently around the periphery based on contextual relevance.
+        library: Swift OS Spatial Framework
+        icon: i-heroicons-eye
+        to: /examples/center-periphery-demo
+        class: col-span-4
+      - title: Voice-First Workspace
+        description: Complete workspace creation and management through natural language commands, with visual feedback and GUI refinement options.
+        library: Swift OS Voice Interface
+        icon: i-heroicons-microphone
+        to: /examples/voice-workspace
+        class: col-span-4
+      - title: Intent Recognition System
+        description: Watch the system interpret complex user goals and automatically configure the perfect combination of widgets and data sources.
+        library: Swift OS AI Intent Engine
+        icon: i-heroicons-sparkles
+        to: /examples/intent-demo
+        class: col-span-4
+      - title: Flow State Protection
+        description: See how the system protects deep work by managing interruptions, maintaining context, and optimizing for sustained attention.
+        library: Swift OS Attention Management
+        icon: i-heroicons-shield-check
+        to: /examples/flow-protection
+        class: col-span-4
+      - title: Contextual Widget Emergence
+        description: Widgets appear and disappear organically based on your current activity, without manual launching or closing.
+        library: Swift OS Context Engine
+        icon: i-heroicons-squares-plus
+        to: /examples/contextual-emergence
+        class: col-span-4
+      - title: Adaptive Workspace Vibes
+        description: Interface aesthetics and workspace atmosphere automatically adapt to your mood, energy level, and current task requirements.
+        library: Swift OS Ambient Intelligence
+        icon: i-heroicons-heart
+        to: /examples/adaptive-vibes
+        class: col-span-4
   - title: Composable Widgets
     description: |
-      Interactive UI components that can be combined and customized for your workflow.
+      Interactive UI components that dynamically combine, share context, and create fluid workflows that adapt to your needs.
     projects:
-      - title: Task Manager Widget
-        description: A productivity widget that helps organize and track daily tasks with AI suggestions.
+      - title: Dynamic Widget Composition
+        description: Watch widgets automatically connect when their inputs and outputs are compatible, creating powerful workflow chains without manual configuration.
         library: Swift OS Widget Framework
-        icon: i-heroicons-check-circle
-        to: /examples/task-manager-widget
+        icon: i-heroicons-link
+        to: /examples/dynamic-composition
         class: col-span-4
-      - title: Weather Dashboard
-        description: Real-time weather information with customizable data sources and layouts.
+      - title: Cross-Widget Data Flow
+        description: See how data flows seamlessly between widgets - your calendar knows about current projects, tasks reference relevant documents.
         library: Swift OS Data Framework
-        icon: i-heroicons-cloud
-        to: /examples/weather-widget
+        icon: i-heroicons-arrow-path
+        to: /examples/data-flow
         class: col-span-4
-      - title: System Monitor
-        description: Live system performance metrics with customizable visualization options.
-        library: Swift OS System API
-        icon: i-heroicons-chart-bar
-        to: /examples/system-monitor
+      - title: Contextual State Sharing
+        description: Widgets maintain shared understanding of your current context, eliminating the need to repeatedly provide the same information.
+        library: Swift OS Context API
+        icon: i-heroicons-share
+        to: /examples/state-sharing
         class: col-span-4
-      - title: Communication Hub
-        description: Unified messaging interface supporting multiple communication platforms.
-        library: Swift OS Communication API
-        icon: i-heroicons-chat-bubble-left-right
-        to: /examples/communication-hub
+      - title: Intelligent Widget Scaling
+        description: Widgets automatically resize based on importance, available information, and your attention patterns.
+        library: Swift OS Adaptive UI
+        icon: i-heroicons-arrows-pointing-out
+        to: /examples/intelligent-scaling
         class: col-span-4
-      - title: Media Controller
-        description: Universal media playback controls with smart playlist management.
-        library: Swift OS Media Framework
-        icon: i-heroicons-play-circle
-        to: /examples/media-controller
+      - title: Progressive Disclosure
+        description: Complex functionality reveals itself gradually as needed, preventing interface overwhelm while maintaining power.
+        library: Swift OS Progressive UI
+        icon: i-heroicons-eye-slash
+        to: /examples/progressive-disclosure
         class: col-span-4
-      - title: Calendar Widget
-        description: Intelligent calendar that learns from your patterns and suggests optimal scheduling.
-        library: Swift OS Calendar API
-        icon: i-heroicons-calendar-days
-        to: /examples/calendar-widget
+      - title: Collaborative Widget Spaces
+        description: Share and co-create widgets with others in real-time, maintaining privacy controls and individual customizations.
+        library: Swift OS Collaboration API
+        icon: i-heroicons-users
+        to: /examples/collaborative-widgets
         class: col-span-4
   - title: AI Agents
     description: |
-      Intelligent agents that learn, adapt, and enhance your computing experience.
+      Intelligent agents that coordinate across widgets, manage your digital life, and proactively assist with complex multi-step objectives.
     projects:
-      - title: Personal Assistant
-        description: An AI agent that learns your preferences and helps manage daily activities.
+      - title: Goal Orchestration Agent
+        description: AI agent that breaks down long-term dreams into actionable daily tasks, coordinating multiple widgets to track progress toward your aspirations.
         library: Swift OS AI Framework
-        icon: i-heroicons-user-circle
-        to: /examples/personal-assistant
-      - title: Security Monitor
-        description: Intelligent security agent that monitors system activity and prevents threats.
-        library: Swift OS Security API
-        icon: i-heroicons-shield-check
-        to: /examples/security-monitor
-      - title: Resource Optimizer
-        description: AI agent that optimizes system resources based on usage patterns and priorities.
-        library: Swift OS Performance API
-        icon: i-heroicons-cpu-chip
-        to: /examples/resource-optimizer
-      - title: Content Curator
-        description: Smart agent that discovers, organizes, and recommends content based on your interests.
-        library: Swift OS ML Framework
-        icon: i-heroicons-sparkles
-        to: /examples/content-curator
+        icon: i-heroicons-star
+        to: /examples/goal-orchestrator
+      - title: Relationship Intelligence Agent
+        description: Maintains rich context about your relationships, suggests optimal communication strategies, and helps coordinate collaborative projects.
+        library: Swift OS Social Intelligence
+        icon: i-heroicons-users
+        to: /examples/relationship-agent
+      - title: Attention Management Agent
+        description: Protects your focus by learning your peak productivity patterns, managing interruptions, and optimizing workspace configurations for deep work.
+        library: Swift OS Attention API
+        icon: i-heroicons-eye
+        to: /examples/attention-agent
+      - title: Data Sovereignty Agent
+        description: Ensures your data remains private and under your control while enabling intelligent insights and cross-widget functionality.
+        library: Swift OS Privacy Framework
+        icon: i-heroicons-lock-closed
+        to: /examples/sovereignty-agent
+      - title: Learning Coordination Agent
+        description: Orchestrates multiple specialist agents, learns from their interactions, and continuously improves system-wide intelligence.
+        library: Swift OS Meta-Learning
+        icon: i-heroicons-academic-cap
+        to: /examples/learning-coordinator
+      - title: Ambient Intelligence Agent
+        description: Adapts interface vibes, workspace atmosphere, and interaction patterns based on your emotional state, energy levels, and contextual needs.
+        library: Swift OS Ambient AI
+        icon: i-heroicons-heart
+        to: /examples/ambient-agent
   - title: System Components
     description: |
       Core system components demonstrating Swift OS architecture and capabilities.

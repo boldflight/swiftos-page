@@ -13,35 +13,78 @@ hero:
       trailing: true
       size: xl
       to: /get-started
+    - label: Design Principles
+      icon: i-heroicons-sparkles
+      size: xl
+      color: gray
+      to: /design
     - label: See Examples
       icon: i-simple-icons-github
       size: xl
       color: gray
       to: /examples
+philosophy:
+  title: Beyond Traditional Computing
+  description: Swift OS reimagines the fundamental relationship between humans and computers through intelligent, conversational interfaces that adapt to your intent rather than forcing you to learn complex tools.
+  items:
+    - title: Intent-First Interface
+      description: Describe what you want to accomplish using natural language. The system translates your intent into the perfect workspace configuration.
+      icon: heroicons:chat-bubble-bottom-center-text
+    - title: Center-Focused Design
+      description: Your primary task always occupies the center of attention, with supporting widgets intelligently arranged in the periphery based on relevance.
+      icon: heroicons:eye
+    - title: Zero Window Management
+      description: Intelligent spatial arrangement eliminates manual window management. The system learns your workflow patterns and optimizes layouts automatically.
+      icon: heroicons:squares-plus
+    - title: Post-App Paradigm
+      description: No more docks or app grids. Functionality emerges contextually when needed, creating a fluid computing experience.
+      icon: heroicons:sparkles
 features:
   title: Built for Digital Sovereignty
   description: Swift OS empowers users with complete control over their computing environment through intelligent design and composable architecture.
   items:
     - title: Composable Widgets
-      description: Modular UI components that adapt to your workflow and can be easily customized or extended.
+      description: Break down app barriers with modular components that combine infinitely. Widgets share context and data seamlessly, creating dynamic workflows that adapt to your needs.
       icon: heroicons:puzzle-piece
     - title: AI Agents
       description: |
-        Intelligent agents that help automate tasks, learn from your patterns, and enhance productivity.
+        Intelligent agents coordinate across widgets to accomplish complex tasks. They learn from your patterns, manage long-term goals, and proactively assist with your objectives.
       icon: heroicons:cpu-chip
     - title: Secure Micro Kernel
       description: |
-        Ultra-lightweight kernel architecture designed for maximum security and minimal attack surface.
+        Ultra-lightweight kernel architecture designed for maximum security and minimal attack surface. Every component runs in isolated sandboxes with strict permission controls.
       icon: heroicons:shield-check
     - title: Privacy First
-      description: Your data stays yours. Built-in privacy controls and encryption protect your digital sovereignty.
+      description: Your data stays yours. Built-in privacy controls, encryption, and data sovereignty protection ensure you maintain complete control over your digital life.
       icon: heroicons:lock-closed
-    - title: High Performance
-      description: Swift-powered performance with intelligent resource management and minimal overhead.
-      icon: heroicons:rocket-launch
-    - title: Open Architecture
-      description: Extensible design allows developers to build upon and customize every aspect of the system.
+    - title: Voice & Type Integration
+      description: Natural language as the primary interface. Voice commands, text input, and GUI elements work together seamlessly for multimodal interaction.
+      icon: heroicons:microphone
+    - title: Living Desktop
+      description: Your workspace becomes an intelligent partner that learns, anticipates, evolves with your goals, and maintains continuity across all your devices.
       icon: heroicons:code-bracket
+aimanagement:
+  title: AI OS Management & Connection
+  description: Swift OS intelligently manages and connects all aspects of your digital life through unified AI coordination.
+  items:
+    - title: Tasks
+      description: AI decomposes complex goals into actionable steps, tracks progress across widgets, and suggests optimal timing based on your patterns.
+      icon: heroicons:check-circle
+    - title: Goals & Dreams
+      description: Long-term vision tracking that connects daily activities to larger life objectives through intelligent progress visualization.
+      icon: heroicons:star
+    - title: People
+      description: Rich relationship context across all interactions with communication intelligence and collaborative workspace sharing.
+      icon: heroicons:users
+    - title: AI Agents
+      description: Specialized agents coordinate across widgets, learn from interactions, and proactively engage when they can assist.
+      icon: heroicons:cpu-chip
+    - title: Tools & Data
+      description: Universal data access with privacy controls, intelligent surfacing, and seamless external tool integration.
+      icon: heroicons:wrench-screwdriver
+    - title: Vibes
+      description: Ambient intelligence that adapts interface aesthetics, workspace atmosphere, and interactions to your emotional context.
+      icon: heroicons:heart
 ecosystem:
   title: Complete System Components
   description: |

@@ -1,18 +1,43 @@
 title: Swift OS - Getting Started
-description: Get started with Swift OS development and explore the intelligent operating system.
+description: Experience revolutionary computing through intent-first interfaces and conversational interaction.
 hero:
-  title: Setup Guide
-  description: Build the future of computing with Swift OS. Let's get you started!
+  title: Your First Swift OS Experience
+  description: Forget learning complex interfaces. Just tell Swift OS what you want to accomplish, and watch it create the perfect workspace for you.
   links:
+    - label: Try Voice Demo
+      to: /demo/voice-interface
+      color: orange
+      leadingIcon: i-heroicons-microphone
+      size: xl
     - label: Need Help?
       to: /community
       color: gray
       leadingIcon: i-heroicons-users
       size: xl
+interaction:
+  title: Natural Interaction
+  description: |
+    Swift OS understands your intent through multiple channels - voice, text, and gesture work together seamlessly.
+  links:
+    - label: Voice Commands
+      to: /interaction/voice
+      color: orange
+      leadingIcon: i-heroicons-microphone
+      size: xl
+    - label: Intent Recognition
+      to: /interaction/intent
+      leadingIcon: i-heroicons-sparkles
+      color: gray
+      size: xl
+    - label: Conversational Interface
+      to: /interaction/conversation
+      leadingIcon: i-heroicons-chat-bubble-bottom-center-text
+      color: gray
+      size: xl
 swift:
   title: Development Environment
   description: |
-    Swift OS development requires Swift and our specialized development tools.
+    Build widgets, agents, and system components using Swift and our revolutionary development paradigms.
   links:
     - label: Xcode (macOS)
       to: https://developer.apple.com/xcode/
@@ -49,22 +74,41 @@ editor:
       color: gray
       leadingIcon: i-heroicons-cog-6-tooth
       size: xl
-template:
-  title: Create a Project
-  description: Start building widgets, agents, and system components with our templates.
+paradigms:
+  title: New Development Paradigms
+  description: |
+    Build for intent-driven interfaces where functionality emerges contextually rather than being manually orchestrated.
   links:
-    - label: Widget Template
-      to: /templates/widget
-      leadingIcon: i-heroicons-puzzle-piece
+    - label: Intent-Driven Development
+      to: /paradigms/intent-driven
+      leadingIcon: i-heroicons-sparkles
       size: xl
-    - label: AI Agent Template
-      to: /templates/agent
+    - label: Contextual UI Patterns
+      to: /paradigms/contextual-ui
+      leadingIcon: i-heroicons-eye
+      color: gray
+      size: xl
+    - label: Conversational Interfaces
+      to: /paradigms/conversational
+      leadingIcon: i-heroicons-chat-bubble-bottom-center-text
+      color: gray
+      size: xl
+template:
+  title: Create Components
+  description: Start building the future with composable widgets, intelligent agents, and contextual interfaces.
+  links:
+    - label: Conversational Widget
+      to: /templates/conversational-widget
+      leadingIcon: i-heroicons-chat-bubble-bottom-center-text
+      size: xl
+    - label: Contextual Agent
+      to: /templates/contextual-agent
       leadingIcon: i-heroicons-cpu-chip
       color: gray
       size: xl
-    - label: System Component
-      to: /templates/component
-      leadingIcon: i-heroicons-cog-6-tooth
+    - label: Adaptive Interface
+      to: /templates/adaptive-interface
+      leadingIcon: i-heroicons-squares-plus
       color: gray
       size: xl
 run:
