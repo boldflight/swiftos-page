@@ -19,8 +19,8 @@
 <svelte:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta property="og:image" content="https://hummingbird.codes/social-media-card.png" />
-	<meta name="twitter:image" content="https://hummingbird.codes/twitter-card.png" />
+	<meta property="og:image" content="https://swiftos.org/social-media-card.png" />
+	<meta name="twitter:image" content="https://swiftos.org/twitter-card.png" />
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 

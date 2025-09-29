@@ -1,6 +1,6 @@
 <svelte:head>
-	<title>News - Hummingbird</title>
-	<meta name="description" content="Latest news and updates from the Hummingbird web framework" />
+	<title>News - Swift OS</title>
+	<meta name="description" content="Latest developments and announcements from the Swift OS project" />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">

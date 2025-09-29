@@ -10,6 +10,11 @@
 			icon: 'heroicons:cube-transparent'
 		},
 		{
+			label: 'Design',
+			to: '/design',
+			icon: 'heroicons:sparkles'
+		},
+		{
 			label: 'News',
 			to: '/news',
 			icon: 'heroicons:light-bulb'
@@ -35,10 +40,10 @@
 				<a href="/" class="flex items-center space-x-2">
 					<img
 						src="{assets}/logo@100px.png"
-						alt="Hummingbird Logo"
+						alt="Swift OS Logo"
 						class="w-8 h-8 mx-auto header-logo"
 					/>
-					<span class="text-xl font-bold text-gray-900 dark:text-white">Hummingbird</span>
+					<span class="text-xl font-bold text-gray-900 dark:text-white">Swift OS</span>
 				</a>
 			</div>
 
@@ -60,9 +65,7 @@
 			<!-- Right side button -->
 			<div class="flex items-center">
 				<a
-					href="https://docs.hummingbird.codes/"
-					target="_blank"
-					rel="noopener noreferrer"
+					href="/docs"
 					class="hidden lg:flex items-center space-x-2 px-4 py-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 rounded-full hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
 				>
 					<span>Docs</span>

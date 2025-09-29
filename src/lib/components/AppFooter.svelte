@@ -13,19 +13,22 @@
 		label: 'Resources',
 		children: [{
 			label: 'Docs',
-			to: 'https://docs.hummingbird.codes/'
+			to: '/docs'
 		}, {
 			label: 'Examples',
-			to: 'https://github.com/hummingbird-project/hummingbird-examples'
+			to: '/examples'
 		}, {
-			label: 'Discord',
-			to: 'https://discord.gg/4twfgYqdat'
+			label: 'Community',
+			to: '/community'
 		}]
 	}, {
-		label: 'Contributing',
+		label: 'Project',
 		children: [{
 			label: 'GitHub',
-			to: 'https://github.com/hummingbird-project/hummingbird'
+			to: 'https://github.com/swiftos'
+		}, {
+			label: 'Design Principles',
+			to: '/design'
 		}]
 	}];
 

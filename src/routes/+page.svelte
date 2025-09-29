@@ -32,10 +32,10 @@ router.get("/videos/:id") { req, context in
 </script>
 
 <svelte:head>
-	<title>{data.page?.title || 'Hummingbird'}</title>
-	<meta name="description" content={data.page?.description || 'The Web Framework for Swift'} />
-	<meta property="og:title" content={data.page?.title || 'Hummingbird'} />
-	<meta property="og:description" content={data.page?.description || 'The Web Framework for Swift'} />
+	<title>{data.page?.title || 'Swift OS'}</title>
+	<meta name="description" content={data.page?.description || 'The Intelligent OS for Digital Sovereignty'} />
+	<meta property="og:title" content={data.page?.title || 'Swift OS'} />
+	<meta property="og:description" content={data.page?.description || 'The Intelligent OS for Digital Sovereignty'} />
 </svelte:head>
 
 <div class="relative min-h-screen">
@@ -45,7 +45,7 @@ router.get("/videos/:id") { req, context in
 
 	<LandingSection class="!py-16 md:!py-24 lg:!py-32 min-h-screen flex items-center">
 		<LandingHero 
-			title='<span class="logo-overlay">Hummingbird</span>'
+			title={data.page?.hero?.title || '<span class="logo-overlay">Swift OS</span>'}
 			description={data.page?.hero?.description}
 			links={data.page?.hero?.links}
 		>

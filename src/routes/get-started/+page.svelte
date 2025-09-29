@@ -1,6 +1,6 @@
 <svelte:head>
-	<title>Get Started - Hummingbird</title>
-	<meta name="description" content="Get started with the Hummingbird web framework" />
+	<title>Get Started - Swift OS</title>
+	<meta name="description" content="Get started with Swift OS, the intelligent operating system for digital sovereignty" />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">

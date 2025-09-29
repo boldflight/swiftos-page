@@ -1,6 +1,6 @@
 <svelte:head>
-	<title>Examples - Hummingbird</title>
-	<meta name="description" content="Example projects built with Hummingbird" />
+	<title>Examples - Swift OS</title>
+	<meta name="description" content="Example projects showcasing Swift OS widgets, AI agents, and revolutionary interface paradigms" />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">

@@ -1,6 +1,6 @@
 <svelte:head>
-	<title>Ecosystem - Hummingbird</title>
-	<meta name="description" content="Hummingbird ecosystem packages and integrations" />
+	<title>Ecosystem - Swift OS</title>
+	<meta name="description" content="Swift OS ecosystem components, frameworks, and tools for building intelligent computing experiences" />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
