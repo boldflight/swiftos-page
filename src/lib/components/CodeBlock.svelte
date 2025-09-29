@@ -88,6 +88,7 @@
     overflow-x: auto;
     line-height: 1.5;
     text-align: left;
+    @apply bg-transparent !important;
   }
 
   :global(.shiki-container code) {
