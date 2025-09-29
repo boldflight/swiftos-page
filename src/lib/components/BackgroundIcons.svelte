@@ -98,7 +98,7 @@
   {#each icons as iconData, index}
     <Icon
       icon={iconData.icon}
-      class="border-gray-200 dark:border-gray-800 {iconData.classes}"
+      class="text-gray-200 dark:text-gray-800 {iconData.classes}"
       style="position: {iconData.style.position}; top: {iconData.style
         .top}; left: {iconData.style.left};"
     />
@@ -115,7 +115,7 @@
   :global(.floating-inverse) {
     width: 50px;
     height: 50px;
-    opacity: 0.09;
+    opacity: 0.8;
   }
 
   :global(.floating) {
@@ -135,7 +135,7 @@
       opacity: 0;
     }
     100% {
-      opacity: 0.09;
+      opacity: 0.8;
     }
   }
 
