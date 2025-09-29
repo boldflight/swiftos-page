@@ -1,40 +1,40 @@
-title: Hummingbird - Getting Started
-description: Get started with Hummingbird 2, a cross-platform web server framework for Swift.
+title: Swift OS - Getting Started
+description: Get started with Swift OS development and explore the intelligent operating system.
 hero:
   title: Setup Guide
-  description: Swift runs on your platform. We'll set you up in no time!
+  description: Build the future of computing with Swift OS. Let's get you started!
   links:
     - label: Need Help?
-      to: https://discord.gg/4twfgYqdat
+      to: /community
       color: gray
-      leadingIcon: i-simple-icons-discord
+      leadingIcon: i-heroicons-users
       size: xl
 swift:
-  title: Install Swift
+  title: Development Environment
   description: |
-    The Swift programming language is the foundation of Hummingbird.
+    Swift OS development requires Swift and our specialized development tools.
   links:
     - label: Xcode (macOS)
       to: https://developer.apple.com/xcode/
       color: gray
       leadingIcon: i-simple-icons-xcode
       size: xl
-    - label: Swiftly (Linux)
+    - label: Swift for Linux
       to: https://swiftlang.github.io/swiftly/
       leadingIcon: i-simple-icons-linux
       color: gray
       size: xl
-    - label: Install Manually
-      to: https://www.swift.org/install/
-      leadingIcon: i-simple-icons-swift
+    - label: Swift OS SDK
+      to: /sdk
+      leadingIcon: i-heroicons-wrench-screwdriver
       color: gray
       size: xl
 editor:
-  title: Editor Support
+  title: Development Tools
   description: |
-    Hummingbird works great with your favorite editors.
+    Swift OS development is supported across multiple platforms and editors.
   links:
-    - label: Xcode (macOS only)
+    - label: Xcode (macOS)
       to: https://developer.apple.com/xcode/
       color: gray
       leadingIcon: i-simple-icons-xcode
@@ -44,51 +44,51 @@ editor:
       leadingIcon: i-simple-icons-visualstudiocode
       color: gray
       size: xl
-    - label: VSCode Extension
-      to: https://github.com/swiftlang/vscode-swift
+    - label: Swift OS Tools
+      to: /tools
       color: gray
-      leadingIcon: i-simple-icons-visualstudiocode
+      leadingIcon: i-heroicons-cog-6-tooth
       size: xl
 template:
   title: Create a Project
-  description: Start a new project from a template or example project.
+  description: Start building widgets, agents, and system components with our templates.
   links:
-    - label: Quick Start
-      to: https://github.com/hummingbird-project/template
-      leadingIcon: i-simple-icons-github
+    - label: Widget Template
+      to: /templates/widget
+      leadingIcon: i-heroicons-puzzle-piece
       size: xl
-    - label: Examples
-      to: https://github.com/hummingbird-project/hummingbird-examples
-      leadingIcon: i-simple-icons-git
+    - label: AI Agent Template
+      to: /templates/agent
+      leadingIcon: i-heroicons-cpu-chip
       color: gray
       size: xl
-    - label: SwiftPM (manual)
-      to: https://github.com/hummingbird-project/hummingbird
-      leadingIcon: i-simple-icons-swift
+    - label: System Component
+      to: /templates/component
+      leadingIcon: i-heroicons-cog-6-tooth
       color: gray
       size: xl
 run:
-  title: Run Your Project
+  title: Start Building
   description: |
-    Run your project and start building your backend.
+    Deploy your widgets and agents, and start exploring the Swift OS ecosystem.
   links:
-    - label: Learn Swift
-      to: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/
-      leadingIcon: i-heroicons-light-bulb
-      size: xl
-      color: gray
-    - label: Hummingbird Docs
-      to: https://docs.hummingbird.codes/
+    - label: Swift OS Guide
+      to: /docs
       leadingIcon: i-heroicons-book-open
       size: xl
       color: gray
+    - label: API Reference
+      to: /api
+      leadingIcon: i-heroicons-code-bracket
+      size: xl
+      color: gray
 cta:
-  title: Join the Hummingbird Community
+  title: Join the Swift OS Community
   description: |
-    Join the Hummingbird community on Discord to get help, share your projects, and chat with other developers.
+    Connect with developers building the future of intelligent operating systems and digital sovereignty.
   links:
     - label: Join the Community
-      to: https://discord.gg/4twfgYqdat
-      leadingIcon: i-simple-icons-discord
+      to: /community
+      leadingIcon: i-heroicons-users
       size: xl
       color: gray

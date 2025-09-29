@@ -1,70 +1,68 @@
-title: Hummingbird
-description: Hummingbird is a cross-platform web server framework for Swift.
+title: Swift OS
+description: Swift OS is an intelligent operating system designed for digital sovereignty.
 hero:
-  title: Hummingbird
-  description: The Web Framework for Swift
+  title: Swift OS
+  description: The Intelligent OS for Digital Sovereignty
   headline:
-    label: What's new in Hummingbird 2?
-    to: https://swiftonserver.com/whats-new-in-hummingbird-2/
+    label: Experience the future of computing
+    to: /news
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       size: xl
-      to: https://docs.hummingbird.codes/2.0/documentation/hummingbird/gettingstarted
-      target: _blank
-    - label: Example Projects
+      to: /get-started
+    - label: See Examples
       icon: i-simple-icons-github
       size: xl
       color: gray
       to: /examples
 features:
-  title: Create Better Backends with Swift
-  description: Hummingbird takes advantage of Swift to make it easy and enjoyable to create robust backends.
+  title: Built for Digital Sovereignty
+  description: Swift OS empowers users with complete control over their computing environment through intelligent design and composable architecture.
   items:
-    - title: Ergonomic Syntax
-      description: Hummingbird apps are easy to develop thanks to Swift's ergonomic syntax.
-      icon: heroicons:light-bulb
-    - title: Structured Concurrency
+    - title: Composable Widgets
+      description: Modular UI components that adapt to your workflow and can be easily customized or extended.
+      icon: heroicons:puzzle-piece
+    - title: AI Agents
       description: |
-        Embracing Structured Concurrency makes Hummingbird apps easy to build.
+        Intelligent agents that help automate tasks, learn from your patterns, and enhance productivity.
+      icon: heroicons:cpu-chip
+    - title: Secure Micro Kernel
+      description: |
+        Ultra-lightweight kernel architecture designed for maximum security and minimal attack surface.
       icon: heroicons:shield-check
-    - title: Lightweight
-      description: |
-        With a tiny memory footprint, Hummingbird is perfect for deploying on cloud services.
-      icon: heroicons:server-stack
-    - title: Thread and Memory Safe
-      description: Swift checks your apps for errors, making your code reliable even before you run it.
-      icon: heroicons:magnifying-glass
-    - title: Predictably Performant
-      description: Hummingbird makes your backends blazing fast, while ARC replaces garbage collection.
+    - title: Privacy First
+      description: Your data stays yours. Built-in privacy controls and encryption protect your digital sovereignty.
+      icon: heroicons:lock-closed
+    - title: High Performance
+      description: Swift-powered performance with intelligent resource management and minimal overhead.
       icon: heroicons:rocket-launch
-    - title: Cross-Platform
-      description: Swift runs on your platform. Linux, macOS, and iOS.
-      icon: simple-icons:linux
+    - title: Open Architecture
+      description: Extensible design allows developers to build upon and customize every aspect of the system.
+      icon: heroicons:code-bracket
 ecosystem:
-  title: Every Package you need
+  title: Complete System Components
   description: |
-    Hummingbird comes with mature solutions for the common needs of all web applications.
+    Swift OS provides a comprehensive suite of system components, development tools, and APIs for building intelligent applications.
   links:
-    - label: Discover Packages
+    - label: Explore Components
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       size: xl
       to: /ecosystem
-      target: _blank
 performance:
-  title: Excellent Performance
+  title: Exceptional Performance
   description: |
-    Hummingbird uses a modern, high-performance web server that can handle tens of thousands of requests per second.
-    All of this while keeping your memory footprint extremely low.
+    Swift OS leverages advanced Swift technologies and intelligent resource management to deliver exceptional performance.
+    Experience blazing fast response times with minimal system resource usage.
 cta:
-  title: Join the Hummingbird Community
+  title: Join the Swift OS Community
   description: |
-    Join the Hummingbird community on Discord to get help, share your projects, and chat with other developers.
+    Connect with developers, researchers, and enthusiasts building the future of intelligent operating systems.
   links:
     - label: Join the Community
-      to: https://discord.gg/4twfgYqdat
-      leadingIcon: i-simple-icons-discord
+      to: /community
+      leadingIcon: i-heroicons-users
       size: xl

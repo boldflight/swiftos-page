@@ -1,172 +1,170 @@
-title: Hummingbird - Ecosystem
-description: Hummingbird has a rich ecosystem of mature packages to help you build your backend.
+title: Swift OS - Ecosystem
+description: Swift OS provides a comprehensive ecosystem of components, frameworks, and tools for building intelligent computing experiences.
 hero:
   title: Ecosystem
-  description: Some highlighted packages that are commonly used with Hummingbird.
+  description: Explore the components that power Swift OS and enable digital sovereignty.
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
       size: xl
-      to: https://github.com/hummingbird-project/hummingbird
-      target: _blank
-    - label: Browse All
+      to: /get-started
+    - label: Browse All Components
       icon: i-heroicons-magnifying-glass
       size: xl
       color: gray
-      to: https://swiftpackageindex.com/search?query=platform%3Alinux
-      target: _blank
+      to: /components
 extensions:
-  title: Official Extensions
-  description: There are official extensions to cover many of your use cases.
+  title: Core Frameworks
+  description: Essential frameworks that power Swift OS functionality and enable intelligent computing.
   items:
-    - title: WebSocket
-      library: HummingbirdWebSocket
-      description: WebSocket upgrade support for the Hummingbird server framework.
-      icon: i-heroicons-globe-alt
-      to: https://github.com/hummingbird-project/hummingbird-websocket
+    - title: Widget Framework
+      library: SwiftOSWidgets
+      description: Composable UI framework for creating modular, adaptive interface components.
+      icon: i-heroicons-puzzle-piece
+      to: /frameworks/widgets
       class: col-span-4
-    - title: AWS Lambda
-      library: HummingbirdLambda
-      description: Run Hummingbird inside an AWS Lambda.
-      icon: i-simple-icons-awslambda
-      to: https://github.com/hummingbird-project/hummingbird-lambda
+    - title: AI Agent SDK
+      library: SwiftOSAgents
+      description: Intelligent agent framework with machine learning and automation capabilities.
+      icon: i-heroicons-cpu-chip
+      to: /frameworks/agents
       class: col-span-4
-    - title: Authentication
-      library: HummingbirdAuth
-      description: Authentication framework and extensions for Hummingbird server framework.
+    - title: Micro Kernel
+      library: SwiftOSKernel
+      description: Ultra-secure, lightweight kernel with minimal attack surface and maximum performance.
+      icon: i-heroicons-shield-check
+      to: /frameworks/kernel
+      class: col-span-4
+    - title: Privacy Framework
+      library: SwiftOSPrivacy
+      description: Built-in privacy controls, encryption, and data sovereignty protection.
       icon: i-heroicons-lock-closed
-      to: https://github.com/hummingbird-project/hummingbird-auth
+      to: /frameworks/privacy
       class: col-span-4
-    - title: OpenAPI
-      library: OpenAPIHummingbird
-      description: Generate Swift client and server code from an OpenAPI document.
-      icon: i-simple-icons-swagger
-      to: https://github.com/swift-server/swift-openapi-hummingbird
+    - title: Component Runtime
+      library: SwiftOSRuntime
+      description: Dynamic component loading and lifecycle management system.
+      icon: i-heroicons-cog-6-tooth
+      to: /frameworks/runtime
       class: col-span-4
-    - title: Fluent ORM
-      library: HummingbirdFluent
-      description: Hummingbird interface to the Fluent database ORM.
+    - title: Communication Layer
+      library: SwiftOSComm
+      description: Secure inter-component communication with built-in encryption and validation.
+      icon: i-heroicons-arrows-right-left
+      to: /frameworks/communication
+      class: col-span-4
+    - title: Data Framework
+      library: SwiftOSData
+      description: Distributed, privacy-preserving data management and storage system.
       icon: i-heroicons-circle-stack
-      to: https://github.com/hummingbird-project/hummingbird-fluent
+      to: /frameworks/data
       class: col-span-4
-    - title: HTTP Compression
-      library: HummingbirdCompression
-      description: Request decompression and response compression for Hummingbird
-      icon: i-simple-icons-swagger
-      to: https://github.com/hummingbird-project/hummingbird-compression
+    - title: ML Framework
+      library: SwiftOSML
+      description: On-device machine learning with privacy-preserving federated learning support.
+      icon: i-heroicons-academic-cap
+      to: /frameworks/ml
       class: col-span-4
-    - title: Redis
-      library: HummingbirdRedis
-      description: Hummingbird interface to RediStack Swift library.
-      icon: i-simple-icons-redis
-      to: https://github.com/hummingbird-project/hummingbird-redis
+    - title: Security Framework
+      library: SwiftOSSecurity
+      description: Comprehensive security framework with sandboxing, isolation, and threat detection.
+      icon: i-heroicons-eye-slash
+      to: /frameworks/security
       class: col-span-4
-    - title: Mustache
-      library: Swift-Mustache
-      description: Package for rendering dynamic content using Mustache templates.
-      icon: i-mdi-mustache
-      to: https://github.com/hummingbird-project/swift-mustache
-      class: col-span-4
-    - title: Job Queues
-      library: Jobs
-      description: Job queue used to persist and offload work to other servers.
-      icon: i-fluent-people-queue-24-regular
-      to: https://github.com/hummingbird-project/swift-jobs
-      class: col-span-4
-databases:
-  title: Database Support
+storage:
+  title: Storage Solutions
   items:
-    - title: PostgreSQL
-      library: PostgresNIO
-      description: Non-blocking, event-driven Swift client for PostgreSQL.
-      icon: i-simple-icons-postgresql
-      to: https://github.com/vapor/postgres-nio
-    - title: MySQL
-      library: MySQLNIO
-      description: Non-blocking, event-driven Swift client for MySQL.
-      icon: i-simple-icons-mysql
-      to: https://github.com/vapor/mysql-nio
-    - title: SQLite
-      library: SQLiteNIO
-      description: Non-blocking wrapper for libsqlite3-dev.
-      icon: i-simple-icons-sqlite
-      to: https://github.com/vapor/sqlite-nio
-    - title: Oracle
-      library: OracleNIO
-      description: Non-blocking, event-driven Swift client for Oracle Databases.
-      icon: i-simple-icons-oracle
-      to: https://github.com/lovetodream/oracle-nio
-    - title: Redis
-      library: RediStack
-      description: A non-blocking Swift client for Redis.
-      icon: i-simple-icons-redis
-      to: https://github.com/swift-server/redistack
-    - title: MongoDB
-      library: MongoKitten
-      description: A fast, pure swift MongoDB driver built for Server Side Swift.
-      icon: i-simple-icons-mongodb
-      to: https://github.com/orlandos-nl/MongoKitten
-    - title: Apache Cassandra
-      library: Swift-Cassandra-Client
-      description: A Swift client for Apache Cassandra.
-      icon: i-simple-icons-apachecassandra
-      to: https://github.com/apple/swift-cassandra-client
-    - title: Apache Kafka
-      library: Swift-Kafka-Client
-      description: A Swift client for Apache Kafka.
-      icon: i-simple-icons-apachekafka
-      to: https://github.com/swift-server/swift-kafka-client
-observability:
-  title: Observability
-  description: Observability is integrated throughout the stack.
-  items:
-    - title: Logging
-      description: A Logging API package for Swift.
-      icon: i-heroicons-book-open
-      to: https://github.com/apple/swift-log
-      class: col-start-5 col-span-4
-    - title: Metrics
-      description: A Metrics API package for Swift.
-      icon: i-heroicons-chart-bar
-      to: https://github.com/apple/swift-metrics
-      class: col-start-3 col-span-4
-    - title: Tracing
-      description: A Distributed Tracing API for Swift.
+    - title: Distributed Storage
+      library: SwiftOSStorage
+      description: Decentralized storage system ensuring data sovereignty and availability.
+      icon: i-heroicons-cloud-arrow-up
+      to: /storage/distributed
+    - title: Encrypted Database
+      library: SwiftOSDB
+      description: Privacy-first database with built-in encryption and zero-knowledge architecture.
+      icon: i-heroicons-lock-closed
+      to: /storage/database
+    - title: Local Cache
+      library: SwiftOSCache
+      description: High-performance local caching with intelligent eviction policies.
+      icon: i-heroicons-cpu-chip
+      to: /storage/cache
+    - title: Backup System
+      library: SwiftOSBackup
+      description: Automated, encrypted backup system with incremental synchronization.
+      icon: i-heroicons-archive-box
+      to: /storage/backup
+    - title: File System
+      library: SwiftOSFS
+      description: Virtual file system with transparent encryption and compression.
+      icon: i-heroicons-folder
+      to: /storage/filesystem
+    - title: Object Store
+      library: SwiftOSObjects
+      description: Distributed object storage with content deduplication and versioning.
+      icon: i-heroicons-cube
+      to: /storage/objects
+    - title: Search Index
+      library: SwiftOSSearch
+      description: Privacy-preserving search indexing with semantic understanding.
       icon: i-heroicons-magnifying-glass
-      to: https://github.com/apple/swift-distributed-tracing
-      class: col-span-4
-misc:
-  title: Other Packages
-  description: Other packages that are commonly used with Hummingbird.
+      to: /storage/search
+    - title: Time Series DB
+      library: SwiftOSTSDB
+      description: Optimized time-series database for metrics, logs, and analytics.
+      icon: i-heroicons-chart-bar
+      to: /storage/timeseries
+observability:
+  title: Monitoring & Analytics
+  description: Privacy-preserving observability and analytics for Swift OS components.
   items:
-    - title: JWT
-      library: JWTKit
-      description: JSON Web Token signing and verification.
-      icon: i-simple-icons-jsonwebtokens
-      to: https://github.com/vapor/jwt-kit
-      class: col-span-4
-    - title: WebAuthn (PassKey)
-      library: WebAuthn Swift
-      description: WebAuthn (Passkey) server support.
-      icon: i-simple-icons-webauthn
-      to: https://github.com/swift-server/webauthn-swift
-      class: col-span-4
-    - title: Apple Push Notifications
-      library: APNSwift
-      description: Support for Apple Push Notification.
-      icon: i-simple-icons-apple
-      to: https://github.com/swift-server-community/APNSwift
-      class: col-span-4
-    - title: Amazon Web Services
-      library: Soto
-      description: Swift language SDK for Amazon Web Services.
-      icon: i-mdi-aws
-      to: https://github.com/soto-project/soto
+    - title: System Monitoring
+      description: Real-time system health and performance monitoring with privacy controls.
+      icon: i-heroicons-chart-bar-square
+      to: /monitoring/system
+      class: col-start-5 col-span-4
+    - title: Privacy Analytics
+      description: User behavior analytics that preserve privacy through differential privacy.
+      icon: i-heroicons-eye-slash
+      to: /monitoring/analytics
       class: col-start-3 col-span-4
-    - title: MQTT
-      library: MTTNIO
-      description: A SwiftNIO based MQTT v3.1.1 and v5.0 client.
-      icon: i-simple-icons-mqtt
-      to: https://github.com/swift-server-community/mqtt-nio
+    - title: Performance Tracing
+      description: Distributed tracing for Swift OS components with zero-knowledge architecture.
+      icon: i-heroicons-magnifying-glass
+      to: /monitoring/tracing
+      class: col-span-4
+integrations:
+  title: External Integrations
+  description: Swift OS components for integrating with external services while maintaining privacy.
+  items:
+    - title: Secure Authentication
+      library: SwiftOSAuth
+      description: Privacy-preserving authentication with support for modern standards.
+      icon: i-heroicons-key
+      to: /integrations/auth
+      class: col-span-4
+    - title: Encrypted Communications
+      library: SwiftOSComms
+      description: End-to-end encrypted communication protocols and clients.
+      icon: i-heroicons-lock-closed
+      to: /integrations/communications
+      class: col-span-4
+    - title: Privacy Bridge
+      library: SwiftOSBridge
+      description: Privacy-preserving bridge to external APIs and services.
+      icon: i-heroicons-link
+      to: /integrations/bridge
+      class: col-span-4
+    - title: Decentralized Identity
+      library: SwiftOSIdentity
+      description: Self-sovereign identity management with blockchain integration.
+      icon: i-heroicons-identification
+      to: /integrations/identity
+      class: col-start-3 col-span-4
+    - title: IoT Gateway
+      library: SwiftOSIoT
+      description: Secure gateway for Internet of Things devices with local processing.
+      icon: i-heroicons-wifi
+      to: /integrations/iot
       class: col-span-4
