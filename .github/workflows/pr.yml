@@ -4,20 +4,27 @@ on:
   pull_request:
   workflow_dispatch:
 
-env:
-  USE_BUN: false
-  NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
 jobs:
-  linux:
+  checks:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
       with:
-        fetch-depth: 0
-    - name: Deploy to Staging
-      run: |
-        ./scripts/deploy.sh
+        node-version: 20
+        cache: npm
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Lint
+      run: npm run lint
+
+    - name: Type check
+      run: npm run typecheck
+
+    - name: Build
+      run: npm run build
