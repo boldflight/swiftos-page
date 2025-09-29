@@ -13,7 +13,9 @@
 	let isHovered = false;
 </script>
 
-<div 
+<div
+	role="button"
+	tabindex="0"
 	class={cn(
 		"group relative p-6 rounded-lg border transition-all duration-300",
 		"bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800",
@@ -21,8 +23,8 @@
 		className.includes('line-numbered-code') ? 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800' : '',
 		className
 	)}
-	on:mouseenter={() => isHovered = true}
-	on:mouseleave={() => isHovered = false}
+	onmouseenter={() => isHovered = true}
+	onmouseleave={() => isHovered = false}
 >
 	{#if icon}
 		<div class="mb-4">
