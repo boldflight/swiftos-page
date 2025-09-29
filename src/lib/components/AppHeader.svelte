@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { page } from '$app/stores';
+	import { assets } from '$app/paths';
 
 	const links = [
 		{
@@ -33,7 +34,7 @@
 			<div class="flex items-center">
 				<a href="/" class="flex items-center space-x-2">
 					<img
-						src="/logo@100px.png"
+						src="{assets}/logo@100px.png"
 						alt="Hummingbird Logo"
 						class="w-8 h-8 mx-auto header-logo"
 					/>
